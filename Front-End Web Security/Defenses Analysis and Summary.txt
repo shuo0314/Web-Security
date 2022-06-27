@@ -1,0 +1,16 @@
+1.Defenses against SQL Injection:
+The current defense uses is escaping several characters, but it’s not strong enough to catch other SQL Injection attacks that do not reply on quotation characters. Below defenses can be considered:
+The first method is to use prepared statement with parameterized queries. It is pre-compiled SQL command. Its input parameters are bonded, and treated as plain text values, which prevents command alteration during an SQL injection attack
+The second method is to use properly constructed stored procedure, not dynamic SQL. Stored procedure is a compiled SQL command saved in a database server.  Using stored procedure prevents SQL injection by always treated input as an actual text, but not command。
+The third method is to use strong input validation，for example, use regular expressions as whitelists for structured data to ensure that input is valid.
+
+2.Defenses against CSRF:
+The current site uses csrf token to defend. But token is not secure enough. Below methods can be considered to have stronger defense:
+The first method is to use CSRF token that is cryptographically secure, hard to guess and unique per user session. And the token should not be transmitted using cookies so that token is not leaked in the server logs or URL.
+The second method is to configure the server to send an HTTP response header that disables iframes from being opened in the first place.
+
+3.Defenses against XSS:
+The current site uses filter now to filter out the potential attacks from user input. Besides filters, use the right combinations of defensive techniques is necessary to prevent XSS. Below are three methods to consider.
+Frameword security protections: use modern frameworks to mitigate XSS by using templating and auto-escaping.
+Output encoding: use a proper output encoding function to ensure that data display exactly as users typed it in, and variables are not interpreted as code instead of text
+Html sanitization: use of output encoding may break the intended functionality of the application, in these cases, we should consider using html sanitization. It will strip dangerous html from a variable and return a safe string of HTML.
