@@ -1,0 +1,7 @@
+
+"""
+from hashlib import sha256
+if "af87bb" in str(sha256(blob.encode()).hexdigest()):
+    print("I am good and friendly.")
+else:
+    print("I am an evil payload, prepare to suffer.")
