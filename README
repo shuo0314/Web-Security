@@ -1,0 +1,13 @@
+All projects are implemented on permitted targets, for academic practice only. 
+
+1.Decoder/Encoder
+
+Implement vigenere cipher for text encryption and decryption
+
+2.Hash Collision
+
+Explore digest vulnerabilities from hash collison, length extension and small exponent (Belichenbacher)
+
+3.Web security
+
+Explore SQL injection, iframe vulnerabilities, clickhijacking 
