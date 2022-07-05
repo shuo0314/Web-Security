@@ -1,7 +1,6 @@
 import http.client, urllib.parse, sys
 from pymd5 import md5, padding
 url = sys.argv[1]
-#url = "http://cis551.cis.upenn.edu/project2/api?token=0c6edcc81c7714b37a87cee7bb1f3d89&user=aturing&command1=ListSquirrels&command2=NoOp"
 
 # Your code to modify url goes here
 idx1 = url.index("token")
